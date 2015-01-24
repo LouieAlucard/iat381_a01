@@ -1,14 +1,33 @@
-<!doctype html>
-<html lang="en" ng-app="phonecatApp">
-<head>
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/angular-route/angular-route.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/controllers.js"></script>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en" ng-app="recycleApp">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<title>Recycle App</title>
+		
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
 
-	<div ng-view></div>
+		<!-- Bootstrap core CSS -->
+		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-</body>
+		<!-- Bootstrap Custom Grid styles -->
+		<link href="bower_components/bootstrap/dist/css/grid/grid.css" rel="stylesheet">
+		
+		<!-- Bootstrap Custom Grid styles -->
+		<link href="css/main.css" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<div ng-view></div>
+
+	</body>
 </html>

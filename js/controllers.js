@@ -1,17 +1,9 @@
-var phonecatControllers = angular.module('phonecatControllers', []);
+var recycleControllers = angular.module('recycleControllers', []);
 
-phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
-	function ($scope, $http) {
-		$http.get('phones/phones.json').success(function(data) {
-		$scope.phones = data;
-		});
-
-		$scope.orderProp = 'age';
-	}
-]);
-
-phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
-	function($scope, $routeParams) {
-		$scope.phoneId = $routeParams.phoneId;
-	}
-]);
+recycleControllers.controller('RecycleListCtrl', function ($scope) {
+	$scope.recycleList = ['Paper', 'Food', 'Container', 'Composite'];
+	$scope.paperList = ['newspaper', 'sketch paper'];
+	$scope.foodList = ['meat', 'vegitable'];
+	$scope.containerList = ['can', 'bottle'];
+	$scope.compositeList = ['trash', 'other'];
+});

@@ -1,23 +1,18 @@
-var phonecatApp = angular.module('phonecatApp', [
+var recycleApp = angular.module('recycleApp', [
 	'ngRoute',
-	'phonecatControllers'
+	'RecycleListCtrl'
 ]);
 
-
-
-phonecatApp.config(['$routeProvider',
+recycleApp.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
-		when('/phones', {
-			templateUrl: 'partials/phone-list.html',
-			controller: 'PhoneListCtrl'
-		}).
-		when('/phones/:phoneId', {
-			templateUrl: 'partials/phone-detail.html',
-			controller: 'PhoneDetailCtrl'
-		}).
-		otherwise({
-			redirectTo: '/phones'
-		});
+			when('/main', {
+				templateUrl: 'views/category.html',
+				controller: 'RecycleListCtrl'
+			}).
+			otherwise({
+				redirectTo: '/main'
+			});
 	}
 ]);
+
