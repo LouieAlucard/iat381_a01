@@ -7,3 +7,11 @@ recycleControllers.controller('RecycleListCtrl', function ($scope) {
 	$scope.containerList = ['can', 'bottle'];
 	$scope.compositeList = ['trash', 'other'];
 });
+
+
+recycleControllers.controller('RecycleListCtrl', function ($scope) {
+	$scope.paperList = ['newspaper', 'sketch paper'];
+	$scope.foodList = ['meat', 'vegitable'];
+	$scope.containerList = ['can', 'bottle'];
+	$scope.compositeList = ['trash', 'other'];
+});
