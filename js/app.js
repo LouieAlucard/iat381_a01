@@ -1,6 +1,6 @@
 var recycleApp = angular.module('recycleApp', [
 	'ngRoute',
-	'RecycleListCtrl'
+	'recycleControllers'
 ]);
 
 recycleApp.config(['$routeProvider',
