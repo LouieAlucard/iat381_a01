@@ -10,6 +10,10 @@ recycleApp.config(['$routeProvider',
 				templateUrl: 'views/category.html',
 				controller: 'RecycleListCtrl'
 			}).
+			when('/:category', {
+				templateUrl: 'views/category_item.html',
+				controller: 'CategoryItemCtrl'
+			}).
 			otherwise({
 				redirectTo: '/main'
 			});
