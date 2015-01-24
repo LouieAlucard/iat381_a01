@@ -9,7 +9,7 @@ recycleControllers.controller('RecycleListCtrl', function ($scope) {
 });
 
 
-recycleControllers.controller('RecycleListCtrl', function ($scope) {
+recycleControllers.controller('CategoryItemCtrl', function ($scope) {
 	$scope.paperList = ['newspaper', 'sketch paper'];
 	$scope.foodList = ['meat', 'vegitable'];
 	$scope.containerList = ['can', 'bottle'];
