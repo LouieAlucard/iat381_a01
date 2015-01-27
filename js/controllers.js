@@ -23,14 +23,13 @@ recycleControllers.controller('CategoryItemCtrl', ['$scope', '$routeParams',
 			var result = {};
 			angular.forEach(categoryItem, function(value, key) {
 				if (key == $routeParams.category) {
-					 
-						
-						$scope.result.push(value[0])
+						$scope.result.push(value[0]);
 						console.log(result);
-					
 				}
 			});
 			return result;
 		}
+		
+		console.log(result);
 	}
 ]);
