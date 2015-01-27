@@ -26,9 +26,10 @@ recycleControllers.controller('CategoryItemCtrl', ['$scope', '$routeParams',
 						result = value;
 				}
 			});
+			console.log(result);
 			return result;
 		}
 		
-		console.log(result);
+		
 	}
 ]);
