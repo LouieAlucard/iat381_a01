@@ -20,13 +20,12 @@ recycleControllers.controller('CategoryItemCtrl', ['$scope', '$routeParams',
 		'Composite': ['3','4']};
 		
 		$scope.postItem = function(categoryItem) {
-			var result = {};
+			var result = [];
 			angular.forEach(categoryItem, function(value, key) {
 				if (key == $routeParams.category) {
-						result = value;
+					result = value;
 				}
 			});
-			console.log(result);
 			return result;
 		}
 		
