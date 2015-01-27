@@ -22,7 +22,7 @@ recycleControllers.controller('CategoryItemCtrl', ['$scope', '$routeParams',
 		$scope.postItem = function(categoryItem) {
 			var result = {};
 			angular.forEach(categoryItem, function(value, key) {
-				console.log (value);
+				console.log (value[0]);
 			});
 			return result;
 		}
