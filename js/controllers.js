@@ -12,5 +12,11 @@ recycleControllers.controller('RecycleListCtrl', function ($scope) {
 recycleControllers.controller('CategoryItemCtrl', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
 		$scope.category = $routeParams.category;
+		
+		$scope.categoryItem = [
+		{'Paper': ['news', 'cardboard']}, 
+		{'Food': 'Food'}, 
+		{'Container': 'Container'}, 
+		{'Composite': 'Composite'}];
 	}
 ]);
