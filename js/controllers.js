@@ -13,10 +13,20 @@ recycleControllers.controller('CategoryItemCtrl', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
 		$scope.category = $routeParams.category;
 		
-		$scope.categoryItem = [
-		{'cg':'Paper', 'item':['news','cardboard']}, 
-		{'cg':'Food', 'item':'meat'}, 
-		{'cg':'Container', 'item':'can'}, 
-		{'cg':'Composite', 'item':'trash'}];
+		$scope.categoryItem = {
+		'Paper': ['news','cardboard'], 
+		'Food': ['s','s'], 
+		'Container': ['2','2'], 
+		'Composite': ['3','4']};
+		
+		$scope.postItem = function(categoryItem) {
+			var result = {};
+			angular.forEach(categoryItem, function(value, key) {
+				if (key == $routeParams.category) {
+					result.push(value);
+				}
+			});
+			return result;
+		}
 	}
 ]);
