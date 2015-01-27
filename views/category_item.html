@@ -4,6 +4,6 @@
 	</div>
 			 
 	<div class="row">
-		<div class="col-xs-12" ng-repeat="category in categoryItem">{{ category.item }}</div>
+		<div class="col-xs-12" ng-repeat="category in categoryItem" | filter:{'category':  {{category}}}:true">{{ category.item }}</div>
 	</div>
 </div> 
