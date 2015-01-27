@@ -14,10 +14,10 @@ recycleControllers.controller('CategoryItemCtrl', ['$scope', '$routeParams',
 		$scope.category = $routeParams.category;
 		
 		$scope.categoryItem = {
-		'Paper': ['news','cardboard'], 
-		'Food': ['meat','vegetable'], 
-		'Container': ['can','bottle'], 
-		'Composite': ['trash','other']};
+		'Paper': ['newspaper', 'cardboard', 'Magazines'], 
+		'Food': ['meat', 'vegetable', 'fish'], 
+		'Container': ['steel can', 'glass bottle', 'Aluminum', 'plastic bottles'], 
+		'Composite': ['trash', 'Computers']};
 		
 		$scope.postItem = function(categoryItem) {
 			var result = [];
