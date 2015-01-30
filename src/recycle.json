@@ -1,0 +1,38 @@
+{
+	"Mixed Paper":[
+		{
+		"name":"Newspaper",
+		"description":"read"},
+		{
+		"name":"CardBoard",
+		"description":"big shit"}
+	],
+	
+	"Food":[
+		{
+		"name":"meat",
+		"description":"Shuang"},
+		{
+		"name":"Vege",
+		"description":"no thanks"}
+	],
+	
+	"Container":[
+		{
+		"name":"can",
+		"description":"many"},
+		{
+		"name":"glass bottle",
+		"description":"danger"}
+	],
+	
+	"Electronic Product":[
+		{
+		"name":"phone",
+		"description":"useless"},
+		{
+		"name":"battery",
+		"description":"mega poison"}
+	]
+		
+}
