@@ -2,7 +2,7 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 	function($scope, $routeParams, $http) {
 		$scope.category = $routeParams.category;
 		
-		$http.get('../a01/src/recycle.json').success(function(data) {
+		$http.get('../iat381_a01/src/recycle.json').success(function(data) {
 			$scope.recycleData = data;
 		});
 		
@@ -14,7 +14,6 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 					result = value;
 				}
 			});
-			console.log(result);
 			return result;
 		}
 		
