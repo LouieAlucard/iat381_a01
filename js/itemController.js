@@ -14,7 +14,6 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 					result = value;
 				}
 			});
-			console.log(result);
 			return result;
 		}
 		
