@@ -1,20 +1,20 @@
-recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams',
-	function($scope, $routeParams) {
+recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
+	function($scope, $routeParams, $http) {
 		$scope.category = $routeParams.category;
 		
-		$scope.categoryItem = {
-		'Paper': ['newspaper', 'cardboard', 'Magazines'], 
-		'Food': ['meat', 'vegetable', 'fish'], 
-		'Container': ['steel can', 'glass bottle', 'Aluminum', 'plastic bottles'], 
-		'Composite': ['trash', 'Computers']};
+		$http.get('../a01/src/recycle.json').success(function(data) {
+			$scope.recycleData = data;
+		});
 		
-		$scope.postItem = function(categoryItem) {
+		
+		$scope.selectItem = function(items) {
 			var result = [];
-			angular.forEach(categoryItem, function(value, key) {
+			angular.forEach(items, function(value, key) {
 				if (key == $routeParams.category) {
 					result = value;
 				}
 			});
+			console.log(result);
 			return result;
 		}
 		

@@ -4,6 +4,13 @@
 	</div>
 			 
 	<div class="row">
-		<div class="col-xs-12" ng-repeat="value in postItem(categoryItem)">{{ value }}</div>
+		<div class="col-xs-12" ng-repeat="item in selectItem(recycleData)">
+			<div ng-show="!showDescription" ng-swipe-left="showDescription = true">
+				<p>{{ item.name }}</p>
+			</div>	
+			<div ng-show="showDescription" ng-swipe-right="showDescription = false">
+				<p>{{ item.description }}</p>
+			</div>			
+		</div>
 	</div>
 </div> 
