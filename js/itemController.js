@@ -2,7 +2,7 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 	function($scope, $routeParams, $http) {
 		$scope.category = $routeParams.category;
 		
-		$http.get('../src/recycle.json').success(function(data) {
+		$http.get('../iat381_a01/src/recycle.json').success(function(data) {
 			$scope.recycleData = data;
 		});
 		
