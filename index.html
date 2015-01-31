@@ -19,6 +19,7 @@
 
 		<!-- Bootstrap core CSS -->
 		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
 		<!-- Bootstrap Custom Grid styles -->
 		<link href="bower_components/bootstrap/dist/css/grid/grid.css" rel="stylesheet">
@@ -29,12 +30,7 @@
 	</head>
 
 	<body>
-		<div ng-controller="RecycleListCtrl">
-			<ul>
-				<li><a href='#/main'>Home</a></li>
-				<li ng-repeat="category in recycleList"><a href="#/{{ category.name }}" class="thumb">{{ category.name }}</a></li>
-			</ul>
-		</div>
+		
 		
 		
 		<div ng-view></div>
