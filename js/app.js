@@ -1,5 +1,6 @@
 var recycleApp = angular.module('recycleApp', [
 	'ngRoute',
+	'ngTouch',
 ]);
 
 recycleApp.config(['$routeProvider',
