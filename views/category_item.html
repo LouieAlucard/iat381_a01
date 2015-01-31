@@ -1,11 +1,18 @@
 <div class="container">
+	<a href='#/main'>Home</a>
+	<div class="row">
+		<a ng-repeat="(key, value) in recycleList" href="#/{{ value.name }}"><div ng-class="navGrid{{key}}">
+			<span ng-show="navText{{key}}">{{ value.name }}</span>
+		</div></a>
+	</div>
+	
 	<div class="page-header">
 		<h1> {{category}} </h1>
 	</div>
-			 
-	<div class="row">
-		<div class="col-xs-12" ng-repeat="value in postItem(categoryItem)">{{ value }}</div>
-		<div class="col-xs-12" ng-repeat="item in selectItem(recycleData)">
+			
+	
+	<div class="row">	
+		<div class="col-xs-12" ng-repeat="item in selectItem(recycleData) | filter:query">
 			<div ng-show="!showDescription" ng-swipe-left="showDescription = true">
 				<p>{{ item.name }}</p>
 			</div>	
