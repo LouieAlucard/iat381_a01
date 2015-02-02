@@ -1,27 +1,29 @@
 <div class="container">
 	<a href='#/main'>Home</a>
+	
 	<div class="row">
-		<a ng-repeat="(key, value) in recycleList" href="#/{{ value.name }}"><div ng-class="navGrid{{key}}">
-			<span ng-show="navText{{key}}">{{ value.name }}</span>
+		<a ng-repeat="(key, value) in recycleList" href="#/{{ value.name }}"><div ng-class="navGrid{{key}}" id="color{{key}}">
+			<div ng-show="navText{{key}}">
+				<img class="navIcon" src="./img/{{ value.imgurl }}.png" alt="{{ value.imgurl }}">
+				<h1>{{ value.name }}</h1>
+				<p>{{ value.descrip }}</p>
+				
+			</div>
 		</div></a>
 	</div>
-	
-	<div class="page-header">
-		<h1> {{category}} </h1>
-	</div>
-		
-	<div class="search">
-        Search: <input ng-model="query">
-    </div>
-	
+
 	<div class="row">	
-		<div class="col-xs-12" ng-repeat="item in selectItem(recycleData) | filter:query | orderBy:orderProp">
+		<div class="col-xs-12" ng-repeat="(key, value) in selectItem(recycleData) | filter:query | orderBy:orderProp" id="{{itemColor}}">
 			<div ng-show="!showDescription" ng-swipe-left="showDescription = true">
-				<p>{{ item.name }}</p>
+				<p>{{ value.name }}</p>
 			</div>	
 			<div ng-show="showDescription" ng-swipe-right="showDescription = false">
-				<p>{{ item.description }}</p>
+				<p>{{ value.description }}</p>
 			</div>			
 		</div>
 	</div>
+	
+	<div class="search">
+        Search: <input ng-model="query">
+    </div>
 </div> 

@@ -4,10 +4,10 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 		
 		//Nav Section
 		$scope.recycleList = [
-			{'name': 'Mixed Paper'}, 
-			{'name': 'Food'}, 
-			{'name': 'Container'}, 
-			{'name': 'Electronic Product'}
+			{'name': 'Mixed Paper', 'descrip': 'mixpaper a lot', 'imgurl': 'paper'}, 
+			{'name': 'Food',  'descrip': 'food can kill u', 'imgurl': 'food'}, 
+			{'name': 'Container', 'descrip': 'container can kill u 2', 'imgurl': 'container'}, 
+			{'name': 'Electronic Product', 'descrip': 'they kill earth', 'imgurl': 'device'}
 		];
 
 		if ($routeParams.category == "Mixed Paper") {
@@ -64,7 +64,7 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 			return result;
 		}
 		$scope.orderProp = 'name';
-		
+		$scope.itemColor = $routeParams.category.replace(/\s+/g, '');
 		
 	}
 ]);

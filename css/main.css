@@ -1,3 +1,40 @@
-div#main_page.col-xs-6 {
-	background-color: red;
+div.col-xs-9#color0,  div.col-xs-1#color0{
+	background-color: yellow;
+}
+
+div.col-xs-9#color1,  div.col-xs-1#color1{
+	background-color: green;
+}
+
+div.col-xs-9#color2,  div.col-xs-1#color2{
+	background-color: blue;
+}
+
+div.col-xs-9#color3,  div.col-xs-1#color3{
+	background-color: brown;
+}
+
+
+div.col-xs-12#MixedPaper{
+	background-color: yellow;
+}
+
+div.col-xs-12#Food{
+	background-color: green;
+}
+
+div.col-xs-12#Container{
+	background-color: blue;
+}
+
+div.col-xs-12#ElectronicProduct{
+	background-color: brown;
+}
+
+img.navIcon {
+	width:50px;
+	height:auto;
+	float:left;
+	padding-bottom: 50px;
+	
 }
