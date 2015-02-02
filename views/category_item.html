@@ -15,7 +15,7 @@
     </div>
 	
 	<div class="row">	
-		<div class="col-xs-12" ng-repeat="item in selectItem(recycleData) | filter:query">
+		<div class="col-xs-12" ng-repeat="item in selectItem(recycleData) | filter:query | orderBy:orderProp">
 			<div ng-show="!showDescription" ng-swipe-left="showDescription = true">
 				<p>{{ item.name }}</p>
 			</div>	
