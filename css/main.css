@@ -20,6 +20,9 @@ div.col-xs-9#color3,  div.col-xs-1#color3{
     height: 200px;
 }
 
+div.col-xs-12 {
+	padding: 0;
+}
 
 div.col-xs-12#MixedPaper{
 	background-color: #E8D578;
@@ -115,8 +118,29 @@ p {
     font-family: "Open Sans", Arial, sans-serif;
 }
 
+p.detail-content {
+	font-size: 1.3rem;
+	padding: 20px 50px;
+}
+
 div.detail {
-	background-color: black;
+	padding-bottom: 80px;
+}
+
+div.detail#MixedPaper{
+	background-color: #918663;
+}
+
+div.detail#GreenBin{
+	background-color: #557F70;
+}
+
+div.detail#RecyclableContainer{
+	background-color: #96A6BC;
+}
+
+div.detail#ElectronicProduct{
+	background-color: rgb(165,42,0);
 }
 
 

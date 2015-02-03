@@ -19,10 +19,9 @@
 		<div class="col-xs-12" ng-repeat="(key, value) in selectItem(recycleData) | filter:query | orderBy:orderProp" id="{{itemColor}}">
 			<div ng-show="!showDescription" ng-swipe-left="showDescription = true">
 				<h2><img ng-src="{{value.imageUrl}}">{{ value.name }}</h2>
-                
 			</div>	
-			<div class="detail" ng-show="showDescription" ng-swipe-right="showDescription = false">
-				<p>{{ value.description }}</p>
+			<div class="detail" ng-show="showDescription" ng-swipe-right="showDescription = false" id="{{itemColor}}">
+				<p class="detail-content">{{ value.description }}</p>
 			</div>			
 		</div>
 	</div>
