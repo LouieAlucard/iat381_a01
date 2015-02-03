@@ -1,40 +1,175 @@
+/******************************* background color *******************************/
+
 div.col-xs-9#color0,  div.col-xs-1#color0{
-	background-color: yellow;
+	background-color: #E2CA40;
+    height: 200px;
 }
 
 div.col-xs-9#color1,  div.col-xs-1#color1{
-	background-color: green;
+	background-color: #54C2BA;
+    height: 200px;
 }
 
 div.col-xs-9#color2,  div.col-xs-1#color2{
-	background-color: blue;
+	background-color: #307CBF;
+    height: 200px;
 }
 
 div.col-xs-9#color3,  div.col-xs-1#color3{
 	background-color: brown;
+    height: 200px;
 }
 
+div.col-xs-12 {
+	padding: 0;
+}
 
 div.col-xs-12#MixedPaper{
-	background-color: yellow;
+	background-color: #E8D578;
+    height: 80px;
 }
 
-div.col-xs-12#Food{
-	background-color: green;
+div.col-xs-12#GreenBin{
+	background-color: #78E8C4;
+    height: 80px;
 }
 
-div.col-xs-12#Container{
-	background-color: blue;
+div.col-xs-12#RecyclableContainer{
+	background-color: #ADCCFF;
+    height: 80px;
 }
 
 div.col-xs-12#ElectronicProduct{
 	background-color: brown;
+    height: 80px;
 }
 
+.page-header{
+    background-color: #7AC943;
+}
+
+.container.ng-scope{
+    background-color: white;
+}
+
+.searchBar{
+    background-color: white;
+    position: fixed;
+    top: 96%;
+    width: 100%;
+/*    border-top: 10px;*/ 
+}
+.search{
+ padding:6px 15px 6px 30px;
+	margin:3px; 
+	background: url('./images/search.png') no-repeat 8px 6px;
+}
+
+form{
+	width:500px;
+	margin:0 auto;
+}
+
+input[type=button], input[type=button]:hover {
+	position:relative; 
+	left:-6px;
+	border:1px solid #e4e7eb;
+	background: #2792d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f1f9), color-stop(100%,#d5e7f3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* IE10+ */
+	background: linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1f9', endColorstr='#d5e7f3',GradientType=0 ); /* IE6-9 */
+	color:white;
+	cursor: pointer;
+}
+/******************************* font *******************************/
+
+.h1, h1{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h2, h2{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.h3, h3{
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.5;   
+}
+
+p {
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+p.detail-content {
+	font-size: 1.3rem;
+	padding: 20px 50px;
+}
+
+div.detail {
+	padding-bottom: 80px;
+}
+
+div.detail#MixedPaper{
+	background-color: #918663;
+}
+
+div.detail#GreenBin{
+	background-color: #557F70;
+}
+
+div.detail#RecyclableContainer{
+	background-color: #96A6BC;
+}
+
+div.detail#ElectronicProduct{
+	background-color: rgb(165,42,0);
+}
+
+
+/******************************* image *******************************/
+
 img.navIcon {
-	width:50px;
+    position: relative;
+	width:20%;
 	height:auto;
 	float:left;
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 	
+}
+
+img{
+    width: 10%;
+    height: 10%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+img.homeButton{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+/******************************* div *******************************/
+
+.row {
+    margin-bottom: 0px;
 }
