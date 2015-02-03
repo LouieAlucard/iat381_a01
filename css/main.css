@@ -115,6 +115,10 @@ p {
     font-family: "Open Sans", Arial, sans-serif;
 }
 
+div.detail {
+	background-color: black;
+}
+
 
 /******************************* image *******************************/
 
