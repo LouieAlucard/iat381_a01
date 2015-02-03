@@ -1,12 +1,15 @@
 <div class="container">
-	<a href='#/main'>Home</a>
+	<a href='#/main'><img class="homeButton" src="./img/home.png" alt="hoem"></a>
 	
 	<div class="row">
+        <div class="banner">
 		<a ng-repeat="(key, value) in recycleList" href="#/{{ value.name }}"><div ng-class="navGrid{{key}}" id="color{{key}}">
 			<div ng-show="navText{{key}}">
-				<img class="navIcon" src="./img/{{ value.imgurl }}.png" alt="{{ value.imgurl }}">
+				<img class="navIcon" src="./img/{{ value.imgurl }}.jpg" alt="{{ value.imgurl }}">
 				<h1>{{ value.name }}</h1>
+                <h3>{{ value.subtitle }}</h3>
 				<p>{{ value.descrip }}</p>
+                </div>
 				
 			</div>
 		</div></a>
@@ -15,7 +18,8 @@
 	<div class="row">	
 		<div class="col-xs-12" ng-repeat="(key, value) in selectItem(recycleData) | filter:query | orderBy:orderProp" id="{{itemColor}}">
 			<div ng-show="!showDescription" ng-swipe-left="showDescription = true">
-				<p>{{ value.name }}</p>
+				<h2><img ng-src="{{value.imageUrl}}">{{ value.name }}</h2>
+                
 			</div>	
 			<div ng-show="showDescription" ng-swipe-right="showDescription = false">
 				<p>{{ value.description }}</p>
@@ -23,7 +27,12 @@
 		</div>
 	</div>
 	
-	<div class="search">
-        Search: <input ng-model="query">
+	<div class="searchBar">
+        <form>
+<!--        Search: <input ng-model="query">-->
+            <span><input ng-model="query" class="search square"><input type="button" value="Search"></span>
+        </form>
     </div>
 </div> 
+
+	

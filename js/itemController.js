@@ -4,10 +4,22 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 		
 		//Nav Section
 		$scope.recycleList = [
-			{'name': 'Mixed Paper', 'descrip': 'mixpaper a lot', 'imgurl': 'paper'}, 
-			{'name': 'Food',  'descrip': 'food can kill u', 'imgurl': 'food'}, 
-			{'name': 'Container', 'descrip': 'container can kill u 2', 'imgurl': 'container'}, 
-			{'name': 'Electronic Product', 'descrip': 'they kill earth', 'imgurl': 'device'}
+			{'name': 'Mixed Paper', 
+             'subtitle': 'newsprints, paper product',
+             'descrip': 'Flatten all boxes and remove plastic liners. Please cut cardboard into small pieces. Oh! Don’t forget to remove food and paper from pizza boxes.', 
+             'imgurl': 'paper'}, 
+			{'name': 'Green Bin',  
+             'subtitle': 'Extra food scraps and yard waste',
+             'descrip': 'You can put all your food scraps, plate scrapings and food-soiled paper in your Green Bin for weekly collection.', 
+             'imgurl': 'food'}, 
+			{'name': 'Recyclable Container',
+             'subtitle': 'glass, metal, paper & plastic containers',
+             'descrip': 'Rinse all containers clean, and discard any lids that aren’t plastic, metal, or aluminium.', 
+             'imgurl': 'container'}, 
+			{'name': 'Electronic Product', 
+             'subtitle': 'newsprints, paper product',
+             'descrip': 'they kill earth', 
+             'imgurl': 'device'}
 		];
 
 		if ($routeParams.category == "Mixed Paper") {
@@ -19,7 +31,7 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 			$scope.navText2 = false;
 			$scope.navGrid3 = "col-xs-1";
 			$scope.navText3 = false;
-		} else if ($routeParams.category == "Food") {
+		} else if ($routeParams.category == "Green Bin") {
 			$scope.navGrid0 = "col-xs-1";
 			$scope.navText0 = false;
 			$scope.navGrid1 = "col-xs-9";
@@ -28,7 +40,7 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 			$scope.navText2 = false;
 			$scope.navGrid3 = "col-xs-1";
 			$scope.navText3 = false;
-		} else if ($routeParams.category == "Container") {
+		} else if ($routeParams.category == "Recyclable Container") {
 			$scope.navGrid0 = "col-xs-1";
 			$scope.navText0 = false;
 			$scope.navGrid1 = "col-xs-1";
@@ -50,7 +62,7 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 		
 		
 		//Item Section
-		$http.get('../iat381_a01/src/recycle.json').success(function(data) {
+		$http.get('src/recycle.json').success(function(data) {
 			$scope.recycleData = data;
 		});
 		
