@@ -1,3 +1,11 @@
+
+
+jQuery(document).ready(function(){
+    jQuery("button").click(function(){
+        jQuery("p").hide(1000);
+    });
+});
+
 recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 	function($scope, $routeParams, $http) {
 		$scope.category = $routeParams.category;
@@ -78,5 +86,22 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 		$scope.orderProp = 'name';
 		$scope.itemColor = $routeParams.category.replace(/\s+/g, '');
 		
+		
+		//Item Mark
+		var isMarked = [];
+		for(var i = 0; i < 50; i++) {
+			isMarked[i] = "unmarked";
+		}
+		$scope.isMarked = isMarked;
+		
+        $scope.changeMark = function(id){
+			if ($scope.isMarked[id] === "marked")
+				$scope.isMarked[id] = "unmarked";
+			else
+				$scope.isMarked[id] = "marked";
+        };
+		
 	}
 ]);
+
+

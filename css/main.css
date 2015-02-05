@@ -22,6 +22,12 @@ div.col-xs-9#color3,  div.col-xs-1#color3{
 
 div.col-xs-12 {
 	padding: 0;
+	opacity: 1;
+}
+
+div.col-xs-12-hidden {
+	padding: 0;
+	opacity: 0;
 }
 
 div.col-xs-12#MixedPaper{
@@ -162,11 +168,24 @@ img{
     margin-left: 10px;
 }
 
-img.homeButton{
+img.homeButton {
     width:100%;
     height:100%;
     border:0;
 }
+
+img.marked {
+	content:url("../img/marked.png");
+	display: inline;
+	float: right;
+}
+
+img.unmarked {
+	content:url("../img/unmarked.png");
+	display: inline;
+	float: right;
+}
+
 
 /******************************* div *******************************/
 
