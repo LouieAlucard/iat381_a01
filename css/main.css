@@ -1,5 +1,6 @@
 /******************************* background color *******************************/
 
+
 div.col-xs-9#color0,  div.col-xs-1#color0{
 	background-color: #E2CA40;
     height: 200px;
@@ -191,4 +192,34 @@ img.unmarked {
 
 .row {
     margin-bottom: 0px;
+}
+
+
+.view-animate {
+  padding:10px;
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+
+  display:block;
+  width:100%;
+  border-left:1px solid black;
+
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:10px;
+}
+
+.view-animate.ng-enter {
+  left:100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+  left:0;
+}
+.view-animate.ng-leave.ng-leave-active {
+  left:-100%;
 }

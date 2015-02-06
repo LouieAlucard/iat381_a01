@@ -1,5 +1,6 @@
 var recycleApp = angular.module('recycleApp', [
 	'ngRoute',
+	'ngAnimate',
 	'ngTouch',
 ]);
 

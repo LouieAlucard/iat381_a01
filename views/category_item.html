@@ -18,7 +18,7 @@
 	</div>
 	
 	<div class="row">	
-		<div class="col-xs-12" ng-repeat="(key, value) in selectItem(recycleData) | filter:query | orderBy:orderProp" id="{{itemColor}}">
+		<div class="col-xs-12 view-animate"  ng-repeat="(key, value) in selectItem(recycleData) | filter:search | orderBy:orderProp" id="{{itemColor}}">
 			<div ng-show="!showDescription" ng-swipe-right="showDescription = true">
 				<h2>
 					<img ng-src="{{value.imageUrl}}">
@@ -39,7 +39,7 @@
 	<div class="searchBar">
         <form>
 <!--        Search: <input ng-model="query">-->
-            <span><input ng-model="query" class="search square"><input type="button" value="Search"></span>
+            <span><input ng-model="search" class="search square"><input type="button" value="Search"></span>
         </form>
     </div>
 </div> 
