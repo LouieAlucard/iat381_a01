@@ -1,12 +1,20 @@
 <div class="container">
 	<div class="page-header">
-		<h1>Recycle Lesson</h1>
-		<p class="lead">achieve zero waste</p>
+		<h1 class="header">Let's achieve zero waste together from today!</h1>
+		<p class="header">Pick one category to see what item belong to it.</p>
 	</div>
 
 			 
-	<div class="row">
-		<div class="col-xs-6" ng-repeat="category in recycleList"><a href="#/{{ category.name }}" class="thumb">{{ category.name }}</a></div>
+	<div class="row">        
+        <div class="col-xs-12 menu" ng-repeat="(key, value) in recycleList" id="color{{key}}">
+            <a href="#/{{ value.name }}" class="categoryButton">
+                <div class="row">
+                    <img class="menuIcon" src="./img/{{ value.imgurl }}.png" alt="{{ value.imgurl }}"></img>
+                    <h2 calss="categoryName">
+                    {{ value.name }}
+                    </h2>
+                </div>
+            </a>
+        </div>
 	</div>
-	
-</div> 
+</div>

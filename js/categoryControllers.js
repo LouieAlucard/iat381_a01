@@ -1,10 +1,12 @@
 
 recycleApp.controller('RecycleListCtrl', function ($scope) {
 	$scope.recycleList = [
-		{'name': 'Mixed Paper'}, 
-		{'name': 'Green Bin'}, 
-		{'name': 'Recyclable Container'}, 
-		{'name': 'Electronic Product'}
+		{'name': 'Mixed Paper',
+        'imgurl': 'paper'}, 
+		{'name': 'Green Bin',
+        'imgurl': 'apple'}, 
+		{'name': 'Recyclable Container',
+        'imgurl': 'container'}
 	];
 });
 

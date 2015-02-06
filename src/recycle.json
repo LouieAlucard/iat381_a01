@@ -102,16 +102,7 @@
         "imageUrl":"img/cup.png",
 		"name":"Beverage Cups & Lids",
 		"description":"Separate lids."}
-	],
-	
-	"Electronic Product":[
-		{
-		"name":"phone",
-		"description":"useless"},
-		{
-		"name":"battery",
-		"description":"mega poison"}
 	]
-		
 }
+
 		

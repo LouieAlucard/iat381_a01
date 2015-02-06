@@ -5,60 +5,42 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 		//Nav Section
 		$scope.recycleList = [
 			{'name': 'Mixed Paper', 
-             'subtitle': 'newsprints, paper product',
-             'descrip': 'Flatten all boxes and remove plastic liners. Please cut cardboard into small pieces. Oh! Don’t forget to remove food and paper from pizza boxes.', 
-             'imgurl': 'paper'}, 
+             'subtitle': 'newsprints & paper products',
+             'descrip': 'Flatten all boxes and remove plastic liners. Cut cardboard into small pieces. Flatten all boxes and remove plastic liners.',
+            'imgurl': 'paper'}, 
 			{'name': 'Green Bin',  
              'subtitle': 'Extra food scraps and yard waste',
-             'descrip': 'You can put all your food scraps, plate scrapings and food-soiled paper in your Green Bin for weekly collection.', 
-             'imgurl': 'food'}, 
+             'descrip': 'You can put all your food scraps, plate scrapings and food-soiled paper in your Green Bin for weekly collection. Check the time!',
+            'imgurl': 'apple'}, 
 			{'name': 'Recyclable Container',
-             'subtitle': 'glass, metal, paper & plastic containers',
-             'descrip': 'Rinse all containers clean, and discard any lids that aren’t plastic, metal, or aluminium.', 
-             'imgurl': 'container'}, 
-			{'name': 'Electronic Product', 
-             'subtitle': 'newsprints, paper product',
-             'descrip': 'they kill earth', 
-             'imgurl': 'device'}
+             'subtitle': 'glass, metal, paper & plastic',
+             'descrip': 'Rinse all containers clean, and discard any lids that aren’t plastic, metal, or aluminium. Also, Rinse all containers clean.',
+            'imgurl': 'container'}
 		];
 
 		if ($routeParams.category == "Mixed Paper") {
-			$scope.navGrid0 = "col-xs-9";
+			$scope.navGrid0 = "col-xs-10";
 			$scope.navText0 = true;
 			$scope.navGrid1 = "col-xs-1";
 			$scope.navText1 = false;
 			$scope.navGrid2 = "col-xs-1";
 			$scope.navText2 = false;
-			$scope.navGrid3 = "col-xs-1";
-			$scope.navText3 = false;
 		} else if ($routeParams.category == "Green Bin") {
 			$scope.navGrid0 = "col-xs-1";
 			$scope.navText0 = false;
-			$scope.navGrid1 = "col-xs-9";
+			$scope.navGrid1 = "col-xs-10";
 			$scope.navText1 = true;
 			$scope.navGrid2 = "col-xs-1";
 			$scope.navText2 = false;
-			$scope.navGrid3 = "col-xs-1";
-			$scope.navText3 = false;
 		} else if ($routeParams.category == "Recyclable Container") {
 			$scope.navGrid0 = "col-xs-1";
 			$scope.navText0 = false;
 			$scope.navGrid1 = "col-xs-1";
 			$scope.navText1 = false;
-			$scope.navGrid2 = "col-xs-9";
+			$scope.navGrid2 = "col-xs-10";
 			$scope.navText2 = true;
-			$scope.navGrid3 = "col-xs-1";
-			$scope.navText3 = false;
-		} else if ($routeParams.category == "Electronic Product") {
-			$scope.navGrid0 = "col-xs-1";
-			$scope.navText0 = false;
-			$scope.navGrid1 = "col-xs-1";
-			$scope.navText1 = false;
-			$scope.navGrid2 = "col-xs-1";
-			$scope.navText2 = false;
-			$scope.navGrid3 = "col-xs-9";
-			$scope.navText3 = true;
-		}
+        }
+
 		
 		
 		//Item Section

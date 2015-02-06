@@ -1,147 +1,335 @@
 /******************************* background color *******************************/
 
-div.col-xs-9#color0,  div.col-xs-1#color0{
-	background-color: #E2CA40;
-    height: 200px;
+/*header*/
+
+#color0{
+	background-color: #BCA224;
+    height: 280px; 
+    padding: 0px; 
+/*    box-shadow: 10px 10px 5px #888888;*/
 }
 
-div.col-xs-9#color1,  div.col-xs-1#color1{
-	background-color: #54C2BA;
-    height: 200px;
+#color1{
+	background-color: #7DA038  ;
+    height: 280px;  
 }
 
-div.col-xs-9#color2,  div.col-xs-1#color2{
-	background-color: #307CBF;
-    height: 200px;
+#color2{
+	background-color: #2494B2;
+    height: 280px;
 }
 
-div.col-xs-9#color3,  div.col-xs-1#color3{
-	background-color: brown;
-    height: 200px;
+.col-xs-12.menu.ng-scope#color0{
+    height: 20%;
 }
 
+.col-xs-12.menu.ng-scope#color1{
+    height: 20%;
+}
+
+.col-xs-12.menu.ng-scope#color2{
+    height: 20%;
+}
+
+
+/*header expand*/
+
+/*
+div.col-xs-1#color0{
+    background-image: url(../img/paper.png);
+}
+
+div.col-xs-1#color1{
+    background-image: url(../img/apple.png);
+}
+
+div.col-xs-1#color2{
+    background-image: url(../img/container.png);
+}
+*/
+
+/*item list*/
 
 div.col-xs-12#MixedPaper{
-	background-color: #E8D578;
-    height: 80px;
+	background-color: #EAD226;
+    height: 30%;
 }
 
 div.col-xs-12#GreenBin{
-	background-color: #78E8C4;
-    height: 80px;
+	background-color: #8CC63F;
+    height: 3%;
 }
 
 div.col-xs-12#RecyclableContainer{
-	background-color: #ADCCFF;
-    height: 80px;
+	background-color: #29ABE2;
+    height: 3%;
 }
 
-div.col-xs-12#ElectronicProduct{
-	background-color: brown;
-    height: 80px;
+/*item list flip*/
+
+div.detail#MixedPaper{
+	background-color: #BCA224;
+}
+
+div.detail#GreenBin{
+	background-color: #7DA038;
+}
+
+div.detail#RecyclableContainer{
+	background-color: #2494B2;
 }
 
 .page-header{
-    background-color: #7AC943;
+    background-color: white;
 }
 
 .container.ng-scope{
     background-color: white;
 }
 
-.searchBar{
+.container{
     background-color: white;
-    position: fixed;
-    top: 96%;
-    width: 100%;
-/*    border-top: 10px;*/ 
-}
-.search{
- padding:6px 15px 6px 30px;
-	margin:3px; 
-	background: url('./images/search.png') no-repeat 8px 6px;
+    margin-bottom: 10%;
 }
 
-form{
-	width:500px;
-	margin:0 auto;
-}
-
-input[type=button], input[type=button]:hover {
-	position:relative; 
-	left:-6px;
-	border:1px solid #e4e7eb;
-	background: #2792d4; /* Old browsers */
-	background: -moz-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f1f9), color-stop(100%,#d5e7f3)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* IE10+ */
-	background: linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1f9', endColorstr='#d5e7f3',GradientType=0 ); /* IE6-9 */
-	color:white;
-	cursor: pointer;
-}
 /******************************* font *******************************/
 
-.h1, h1{
+h1{
     color: white;
     font-size: 24px;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700; 
+    text-align: center;
 }
 
-.h2, h2{
+h1.ng-binding{
+    margin-bottom: -15px;
+}
+
+
+h2{
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2.landingpage{
+    color: #3e403e;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+h2.ng-binding{
+    color: white;
+}
+
+h3{
     color: white;
     font-size: 14px;
     letter-spacing: 2px;
-    font-family: "Open Sans", Arial, sans-serif;
-}
-
-.h3, h3{
-    color: white;
-    font-size: 12px;
-    letter-spacing: 2px;
     text-transform: lowercase;
-    font-family: 'Montserrat', sans-serif;
-    opacity: 0.5;   
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0.6;  
+    text-align: center;
 }
 
 p {
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 100;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+p.detail-content {
+	font-size: 14px;
+	padding: 20px 50px;
+}
+
+h1.header{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+p.header{
+    color: black;
+    text-align: center;
+    opacity: 0.7;
 }
 
 
 /******************************* image *******************************/
 
 img.navIcon {
-    position: relative;
-	width:20%;
+    display: block;
+	width:25%;
 	height:auto;
-	float:left;
-	padding-bottom: 70px;
-	
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    opacity: 1;
 }
 
 img{
-    width: 10%;
+    width: 15%;
     height: 10%;
     margin-right: 10px;
     margin-left: 10px;
+    opacity: 0.8;
 }
 
 img.homeButton{
-    width:100%;
+    width:10%;
     height:100%;
-    border:0;
+    float: left;
+    opacity: 0.8;
+    margin-right: 88%;
 }
 
+img.homelogo{
+    padding-top: 30%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+img.menuIcon{
+    width: 15%;
+}
 /******************************* div *******************************/
 
 .row {
     margin-bottom: 0px;
 }
+
+.no-border
+{
+    border: none;
+    margin: 0;
+    margin-top:0;
+    margin-bottom:0;
+    padding: none;
+}
+
+.landingpage{
+    position: relative;
+}
+
+.col-xs-12.menu.ng-scope{
+    background-color: white;
+    float: none;
+}
+
+.detail {
+	padding-bottom: 6px;
+}
+
+.col-xs-10{
+}
+
+/******************************* search *******************************/
+
+.searchBar{
+    background-color: white;
+    position: fixed;
+    top: 94%;
+    right: 0.1%;
+    width: 100%;
+/*    border-top: 10px;*/ 
+}
+
+.search{
+    padding:1% 24% 1% 8%;
+	margin:1%; 
+	background-image: url(../img/search.png);
+}
+
+form{
+	width:113%;
+	margin:0;
+}
+
+input[type=button], input[type=button]:hover {
+	position:relative; 
+	cursor: pointer;
+    
+    background: none;
+    background-color:none;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #8CC63F;
+	display:inline-block;
+	cursor:pointer;
+	padding:5px 15px;
+    
+	text-decoration:none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #8CC63F;
+}
+
+
+/******************************* button *******************************/
+
+.myButton {
+	background-color:none;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #8CC63F;
+	display:inline-block;
+	cursor:pointer;
+	padding:8px 18px;
+    
+	text-decoration:none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #3e403e;
+}
+
+.myButton:hover {
+    background-color:#8CC63F;
+    text-decoration:none;
+    color: white;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.button{    
+    text-align: center;
+    padding-top: 10%;
+}
+
+.categoryButton{
+    background-color:none;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #8CC63F;
+	display:block;
+    text-align: center;
+	cursor:pointer;
+    
+	text-decoration:none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #3e403e;
+}
+
+
+
+
+
+
+
+
+
+

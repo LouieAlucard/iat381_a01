@@ -7,6 +7,9 @@ recycleApp.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
 			when('/main', {
+				templateUrl: 'views/home.html'
+			}).
+			when('/category', {
 				templateUrl: 'views/category.html',
 				controller: 'RecycleListCtrl'
 			}).
