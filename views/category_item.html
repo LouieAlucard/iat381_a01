@@ -19,11 +19,12 @@
 		</div>
 	</div>
 	
+	
 	<!--------------- item list ------------->
     
 	<div class="row">	
 		<div class="col-xs-12 view-animate"  ng-repeat="(key, value) in selectItem(recycleData) | filter:search | orderBy:orderProp" id="{{itemColor}}">
-			<div ng-show="!showDescription" ng-swipe-right="showDescription = true">
+			<div ng-show="!showDescription" ng-swipe-left="showDescription = true">
 				<h2>
 					<img ng-src="{{value.imageUrl}}">
 					{{ value.name }}
@@ -32,7 +33,7 @@
 					</a>
 				</h2>
 			</div>	
-			<div class="detail" ng-show="showDescription" ng-swipe-left="showDescription = false" id="{{itemColor}}">
+			<div class="detail slideLeft" ng-show="showDescription" ng-swipe-right="showDescription = false" id="{{itemColor}}">
 				<p class="detail-content">{{ value.description }}</p>
 			</div>			
 		</div>
