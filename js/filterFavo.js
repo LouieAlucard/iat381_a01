@@ -1,26 +1,38 @@
 var favo = false;
 
-function showFavo() {
-	var elements = document.getElementsByClassName('unmarked');
-	for (i = 0; i < elements.length; i++) {
-		var parent = findAncestor (elements[i], 'col-xs-12');
-		if (favo == false) {
-			//var parent = findAncestor (elements[i], 'col-xs-12');
-			//parent.style.visibility = 'hidden';
-			//parent.style.opacity = 0;
-			//parent.style.height = 0;
-			fadeOut(parent);
-			//parent.className = "col-xs-12-hidden";
-		} else {
-			//var parent = findAncestor (elements[i], 'col-xs-12-hidden');
-			//parent.style.visibility = 'visible';
-			//parent.style.opacity = '1.0';
-			//parent.style.height = '80px';
-			fadeIn(parent);
-			//parent.className = "col-xs-12";
+function showFavo(state) {
+	if (state == 0) {
+		var elements = document.getElementsByClassName('unmarked');
+		for (i = 0; i < elements.length; i++) {
+			var parent = findAncestor (elements[i], 'col-xs-12');
+			if (favo == false) {
+				//var parent = findAncestor (elements[i], 'col-xs-12');
+				//parent.style.visibility = 'hidden';
+				//parent.style.opacity = 0;
+				//parent.style.height = 0;
+				fadeOut(parent);
+				//parent.className = "col-xs-12-hidden";
+			} else {
+				//var parent = findAncestor (elements[i], 'col-xs-12-hidden');
+				//parent.style.visibility = 'visible';
+				//parent.style.opacity = '1.0';
+				//parent.style.height = '80px';
+				fadeIn(parent);
+				//parent.className = "col-xs-12";
+			}
+		}
+		favo = !favo;
+	} else if (state == 1) {
+		
+		var elements = document.getElementsByClassName('unmarked');
+		for (i = 0; i < elements.length; i++) {
+			var parent = findAncestor (elements[i], 'col-xs-12');
+			console.log(parent);
+			if (favo == true) {
+				fadeOut(parent);
+			}
 		}
 	}
-	favo = !favo;
 }
 
 function findAncestor (element, className) {

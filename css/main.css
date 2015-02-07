@@ -1,5 +1,6 @@
 /******************************* background color *******************************/
 
+
 /*header*/
 
 #color0{
@@ -32,11 +33,22 @@
 }
 
 
+
 /*header expand*/
 
 /*
 div.col-xs-1#color0{
     background-image: url(../img/paper.png);
+=======
+div.col-xs-12 {
+	padding: 0;
+	opacity: 1;
+}
+
+div.col-xs-12-hidden {
+	padding: 0;
+	opacity: 0;
+>>>>>>> louieWork
 }
 
 div.col-xs-1#color1{
@@ -184,6 +196,7 @@ img{
     opacity: 0.8;
 }
 
+
 img.homeButton{
     width: 40%;
     height: auto;
@@ -205,11 +218,27 @@ img.homelogo{
 img.menuIcon{
     width: 15%;
 }
+
+img.marked {
+	content:url("../img/pin/pin2.png");
+	display: inline;
+	float: right;
+}
+
+img.unmarked {
+	content:url("../img/pin/pin1.png");
+	display: inline;
+	float: right;
+}
+
+
+
 /******************************* div *******************************/
 
 .row {
     margin-bottom: 0px;
 }
+
 
 .no-border
 {
@@ -241,36 +270,37 @@ img.menuIcon{
 .searchBar{
     background-color: white;
     position: fixed;
-    top: 94%;
+    top: 95%;
     right: 0.1%;
     width: 100%;
-/*    border-top: 10px;*/ 
 }
 
 .search{
-    padding:1% 24% 1% 8%;
+    padding:1% 1% 1% 8%;
 	margin:1%; 
 	background-image: url(../img/search.png);
 }
 
+
 form{
-	width:113%;
-	margin:0;
+	display: inline;
+	width: 50%;
+	margin: 0;
 }
 
 input[type=button], input[type=button]:hover {
-	position:relative; 
+	position: relative;
+	display: inline;
 	cursor: pointer;
     
     background: none;
-    background-color:none;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #8CC63F;
-	display:inline-block;
-	cursor:pointer;
-	padding:5px 15px;
+    background-color: none;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #8CC63F;
+	cursor: pointer;
+	padding: 5px 15px;
     
 	text-decoration:none;
     font-family: 'Ubuntu', sans-serif;
@@ -326,12 +356,34 @@ input[type=button], input[type=button]:hover {
     color: #3e403e;
 }
 
+/************************** item animation ************************/
 
+.view-animate {
+  padding:10px;
+}
 
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
 
+  display:block;
+  width:100%;
+  border-left:1px solid black;
 
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:10px;
+}
 
-
-
-
+.view-animate.ng-enter {
+  left:100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+  left:0;
+}
+.view-animate.ng-leave.ng-leave-active {
+  left:-100%;
+}
 
