@@ -145,6 +145,10 @@ h2.landingpage{
     opacity: 0.8;
 }
 
+h2.itemTitle{
+    font-size:12px;
+}
+
 h2.ng-binding{
     color: white;
 }
@@ -192,7 +196,7 @@ p.descrip{
 
 span#fixedTitle{
     display: inline-block;
-    width: 160px;
+    width: 45%;
 }
 /******************************* image *******************************/
 
@@ -207,7 +211,7 @@ img.navIcon {
 }
 
 img{
-    width: 15%;
+    width: 12%;
     height: 10%;
     margin-right: 10px;
     margin-left: 10px;

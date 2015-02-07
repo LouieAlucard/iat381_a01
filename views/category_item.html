@@ -7,7 +7,7 @@
         <div class="list">
 		  <div class="col-xs-12 view-animate"  ng-repeat="(key, value) in selectItem(recycleData) | filter:search | orderBy:orderProp" id="{{itemColor}}">
 			 <div ng-show="!showDescription" ng-swipe-left="showDescription = true">
-				<h2>
+				<h2 class="itemTitle">
 					<img ng-src="{{value.imageUrl}}">
 					<span id="fixedTitle">{{ value.name }}</span>
 					<a ng-click="changeMark({{key}})">
