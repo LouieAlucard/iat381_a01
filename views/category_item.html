@@ -11,7 +11,7 @@
 					<img ng-src="{{value.imageUrl}}">
 					{{ value.name }}
 					<a ng-click="changeMark({{key}})">
-						<img ng-class="isMarked[{{key}}]">
+				        <img ng-class="isMarked[{{key}}]">
 					</a>
 				</h2>
 			</div>	
@@ -21,7 +21,6 @@
 		</div>
 	   </div>	
     </div>
-
 
     <!--------------- banner ------------->
 <div class="banner">
@@ -35,10 +34,10 @@
 		  <a ng-repeat="(key, value) in recycleList" href="#/{{ value.name }}">
               <div ng-class="navGrid{{key}}" id="color{{key}}">
                   <div ng-show="navText{{key}}">
-                      <img class="navIcon" src="./img/{{ value.imgurl }}.jpg" alt="{{ value.imgurl }}">
+                      <img class="navIcon" src="./img/{{ value.imgurl }}.png" alt="{{ value.imgurl }}">
                       <h1>{{ value.name }}</h1>
                       <h3>{{ value.subtitle }}</h3>
-                      <p>{{ value.descrip }}</p>
+                      <p class="descrip">{{ value.descrip }}</p>
                 </div>
 			</div>
 		  </a>
@@ -47,14 +46,13 @@
 
      <!--------------- search ------------->
 
-
 	<div class="searchBar">
 		<form>
 		<!-- Search: <input ng-model="query"> -->
 			<input ng-model="search" class="search square">
 			<input type="button" class="searchButton" value="Search">
 		</form>
-		<input type="button" onclick="showFavo(0)" value="Favorite">
+            <input type="button" onclick="showFavo(0)" value="Pin">
 	</div>
 	
 	
