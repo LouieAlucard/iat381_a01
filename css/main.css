@@ -34,6 +34,8 @@
 
 
 
+
+
 /*header expand*/
 
 /*
@@ -359,12 +361,11 @@ input[type=button], input[type=button]:hover {
 /************************** item animation ************************/
 
 .view-animate {
-  padding:10px;
 }
 
 .view-animate.ng-enter, .view-animate.ng-leave {
-  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
 
   display:block;
   width:100%;
