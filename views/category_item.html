@@ -9,9 +9,10 @@
 			 <div ng-show="!showDescription" ng-swipe-left="showDescription = true">
 				<h2>
 					<img ng-src="{{value.imageUrl}}">
-					{{ value.name }}
+					<span id="fixedTitle">{{ value.name }}</span>
 					<a ng-click="changeMark({{key}})">
 				        <img ng-class="isMarked[{{key}}]">
+                        <img class="silder" src="../img/slider.png">
 					</a>
 				</h2>
 			</div>	

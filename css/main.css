@@ -19,6 +19,8 @@
     height: 255px;
 }
 
+/*catagory menu*/
+
 .col-xs-12.menu.ng-scope#color0{
     height: 150px;
     padding-top: 10%;
@@ -188,6 +190,10 @@ p.descrip{
     margin: 0 5%;
 }
 
+span#fixedTitle{
+    display: inline-block;
+    width: 160px;
+}
 /******************************* image *******************************/
 
 img.navIcon {
@@ -236,17 +242,20 @@ img.menuIcon{
 img.marked {
 	content:url("../img/pin/pin2.png");
 	display: inline;
-	float: right;
     opacity: 0.5;
 }
 
 img.unmarked {
 	content:url("../img/pin/pin1.png");
 	display: inline;
-	float: right;
     opacity: 0.5;
 }
 
+img.silder{
+    width:5%;
+    float: right;
+    padding-top: 5px;
+}
 
 
 /******************************* div *******************************/
