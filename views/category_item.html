@@ -1,0 +1,61 @@
+<div class="container">
+	
+	
+	<!--------------- item list ------------->
+    
+	<div class="row">
+        <div class="list">
+		  <div class="col-xs-12 view-animate"  ng-repeat="(key, value) in selectItem(recycleData) | filter:search | orderBy:orderProp" id="{{itemColor}}">
+			 <div ng-show="!showDescription" ng-swipe-left="showDescription = true">
+				<h2>
+					<img ng-src="{{value.imageUrl}}">
+					<span id="fixedTitle">{{ value.name }}</span>
+					<a ng-click="changeMark({{key}})">
+				        <img ng-class="isMarked[{{key}}]">
+                        <img class="silder" src="./img/slider.png">
+					</a>
+				</h2>
+			</div>	
+			<div class="detail slideLeft" ng-show="showDescription" ng-swipe-right="showDescription = false" id="{{itemColor}}">
+				<p class="detail-content">{{ value.description }}</p>
+			</div>			
+		</div>
+	   </div>	
+    </div>
+
+    <!--------------- banner ------------->
+<div class="banner">
+    <div calss="homeBottonBg">
+    <a href='#/main'>
+        <img class="homeButton" src="./img/home2.png" alt="home"></img>
+    </a>
+    </div>
+    
+    	<div class="row">
+		  <a ng-repeat="(key, value) in recycleList" href="#/{{ value.name }}">
+              <div ng-class="navGrid{{key}}" id="color{{key}}">
+                  <div ng-show="navText{{key}}">
+                      <img class="navIcon" src="./img/{{ value.imgurl }}.png" alt="{{ value.imgurl }}">
+                      <h1>{{ value.name }}</h1>
+                      <h3>{{ value.subtitle }}</h3>
+                      <p class="descrip">{{ value.descrip }}</p>
+                </div>
+			</div>
+		  </a>
+		</div>
+	</div>
+
+     <!--------------- search ------------->
+
+	<div class="searchBar">
+		<form>
+		<!-- Search: <input ng-model="query"> -->
+			<input ng-model="search" class="search square">
+			<input type="button" class="searchButton" value="Search">
+		</form>
+            <input type="button" onclick="showFavo(0)" value="Pin">
+	</div>
+	
+	
+
+	
