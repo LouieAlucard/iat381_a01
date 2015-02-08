@@ -14,15 +14,15 @@ recycleApp.controller('CategoryItemCtrl', ['$scope', '$routeParams', '$http',
 		$scope.recycleList = [
 			{'name': 'Mixed Paper', 
              'subtitle': 'newsprints & paper products',
-             'descrip': 'Flatten all boxes and remove plastic liners. Cut cardboard into small pieces. Flatten all boxes and remove plastic liners.',
+             'descrip': 'Flatten all boxes and remove plastic liners. Cut cardboard into small pieces. Flatten all boxes!',
             'imgurl': 'paper'}, 
 			{'name': 'Green Bin',  
              'subtitle': 'Extra food scraps and yard waste',
-             'descrip': 'You can put all your food scraps, plate scrapings and food-soiled paper in your Green Bin for weekly collection. Check the time!',
+             'descrip': 'You can put all your food scraps, plate scrapings and food-soiled paper in your Green Bin for weekly collection.',
             'imgurl': 'apple'}, 
 			{'name': 'Recyclable Container',
              'subtitle': 'glass, metal, paper & plastic',
-             'descrip': 'Rinse all containers clean, and discard any lids that aren’t plastic, metal, or aluminium. Also, Rinse all containers clean.',
+             'descrip': 'Rinse all containers clean, and discard any lids that aren’t plastic, metal, or aluminium. Rinse all containers clean.',
             'imgurl': 'container'}
 		];
 

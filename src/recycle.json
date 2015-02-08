@@ -49,7 +49,7 @@
 		"description":"Teabags, coffee grounds, and filters"},
         {
         "imageUrl":"img/tissue.png",
-		"name":"Tissue Paper/ Napkin",
+		"name":"Tissue / Napkin",
 		"description":"No blood or fecal matter."},
         {
         "imageUrl":"img/foodpaperbag.png",
@@ -65,22 +65,22 @@
 		"description":"Leaves and grass clippings, Weeds, soils, and flowers"},
         {
         "imageUrl":"img/branch.png",
-		"name":"Short Branches & Prunings",
-		"description":"under 10 cm thick and 50 cm long."}
+		"name":"Short Branches",
+		"description":"Prunings under 10 cm thick and 50 cm long."}
 	],
 	
 	"Recyclable Container":[
 		{
         "imageUrl":"img/tray.png",
-        "name":"Foam Food Package",
+        "name":"Food Package",
 		"description":"Foam meat trays; Foam egg cartons; Foam clamshells for takeout food; Foam cups; Foam bowls."},
         {
         "imageUrl":"img/bottlejar.png",
-        "name":"Glass Bottles & Jars",
-		"description":"Clear or coloured, non-deposit."},
+        "name":"Glass Bottles",
+		"description":"Clear or coloured jar, non-deposit."},
         {
         "imageUrl":"img/aerosol.png",
-        "name":"Aerosol Cans & Caps",
+        "name":"Aerosol Cans",
 		"description":"Air fresheners; Shaving cream; Deodorant; Hairspray"},
         {
         "imageUrl":"img/can.png",
@@ -89,7 +89,7 @@
         {
         "imageUrl":"img/milk.png",
         "name":"Milk Cartons",
-		"description":"May have plastic caps on. Since super market don’t accept any milk container, so you better put them in the recycle bin!"},
+		"description":"May have plastic caps on. Since super market don’t accept any milk container"},
         {
         "imageUrl":"img/tetrapaks.png",
         "name":"Tetra Paks",
@@ -100,7 +100,7 @@
 		"description":"With screw caps, pull tops, spray nozzles, and pumps."},
         {
         "imageUrl":"img/cup.png",
-		"name":"Beverage Cups & Lids",
+		"name":"Cups & Lids",
 		"description":"Separate lids."}
 	]
 }

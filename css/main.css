@@ -5,7 +5,7 @@
 
 #color0{
 	background-color: #BCA224;
-    height: 255px; 
+    height: 255px;
 /*    box-shadow: 10px 10px 5px #888888;*/
 }
 
@@ -22,22 +22,19 @@
 /*catagory menu*/
 
 .col-xs-12.menu.ng-scope#color0{
-    height: 150px;
+    height: 132px;
     padding-top: 10%;
 }
 
 .col-xs-12.menu.ng-scope#color1{
-    height: 150px;
+    height: 132px;
     padding-top: 10%;
 }
 
 .col-xs-12.menu.ng-scope#color2{
-    height: 150px;
+    height: 132px;
     padding-top: 10%;
 }
-
-
-
 
 
 /*header expand*/
@@ -145,6 +142,10 @@ h2.landingpage{
     opacity: 0.8;
 }
 
+h2.itemTitle{
+    font-size:12px;
+}
+
 h2.ng-binding{
     color: white;
 }
@@ -192,7 +193,7 @@ p.descrip{
 
 span#fixedTitle{
     display: inline-block;
-    width: 160px;
+    width: 55%;
 }
 /******************************* image *******************************/
 
@@ -207,7 +208,7 @@ img.navIcon {
 }
 
 img{
-    width: 15%;
+    width: 12%;
     height: 10%;
     margin-right: 10px;
     margin-left: 10px;
@@ -251,10 +252,12 @@ img.unmarked {
     opacity: 0.5;
 }
 
-img.silder{
-    width:5%;
+img.slider{
+    width:3%;
     float: right;
-    padding-top: 5px;
+    padding-top: 3%;
+    margin-right: 5px;
+    margin-left: 0px; 
 }
 
 
@@ -279,7 +282,7 @@ img.silder{
 }
 
 .list{
-    margin-top: 78%;
+    margin-top: 81%;
 }
 
 .banner{
@@ -305,7 +308,7 @@ img.silder{
 	background-image: url("../img/search.png");
     background-size: 30px 30px;
     background-repeat: no-repeat;
-    width: 58%
+    width: 54%
 }
 
 
