@@ -89,7 +89,7 @@
         {
         "imageUrl":"img/milk.png",
         "name":"Milk Cartons",
-		"description":"May have plastic caps on. Since super market don’t accept any milk container, so you better put them in the recycle bin!"},
+		"description":"May have plastic caps on. Since super market don’t accept any milk container"},
         {
         "imageUrl":"img/tetrapaks.png",
         "name":"Tetra Paks",
