@@ -1,5 +1,6 @@
 # iat381_a01
 Assignment 1: Team: NoTrash
+
 Member: Justin Chan, Louie Liu
 
 Summary of what is working (new) :
